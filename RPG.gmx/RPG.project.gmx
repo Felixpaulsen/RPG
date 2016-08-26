@@ -15,6 +15,8 @@
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\sprite6</sprite>
+    <sprite>sprites\spr_shadow</sprite>
+    <sprite>sprites\spr_rain</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -29,6 +31,8 @@
     <object>objects\obj_rock</object>
     <object>objects\obj_sign</object>
     <object>objects\obj_draw_sign_text</object>
+    <object>objects\opj_rain_control</object>
+    <object>objects\obj_rain</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
