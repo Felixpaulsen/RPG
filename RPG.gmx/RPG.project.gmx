@@ -14,16 +14,21 @@
     </sprites>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_sign</sprite>
+    <sprite>sprites\sprite6</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_movement.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fnt_sign</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_rock</object>
     <object>objects\obj_sign</object>
+    <object>objects\obj_draw_sign_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
