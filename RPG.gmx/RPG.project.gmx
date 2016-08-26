@@ -10,6 +10,7 @@
     <sprite>sprites\spr_player_up</sprite>
     <sprite>sprites\spr_player_right</sprite>
     <sprite>sprites\spr_player_left</sprite>
+    <sprite>sprites\spr_rock</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -18,6 +19,7 @@
   </scripts>
   <objects name="objects">
     <object>objects\obj_player</object>
+    <object>objects\obj_rock</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
