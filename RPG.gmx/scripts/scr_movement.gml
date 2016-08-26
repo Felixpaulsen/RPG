@@ -8,25 +8,25 @@ down_key = argument3;
 spd = argument4;
 
 //Left movement
-if keyboard_check(left_key)
+if keyboard_check(left_key) && place_free(x-spd,y)
 {
     x -= spd;
 }
 
 //Right movement
-if keyboard_check(right_key)
+if keyboard_check(right_key) && place_free(x+spd,y)
 {
     x += spd;
 }
 
 //Up movement
-if keyboard_check(up_key)
+if keyboard_check(up_key) && place_free(x,y-spd)
 {
     y -= spd;
 }
 
 //Down movement
-if keyboard_check(down_key)
+if keyboard_check(down_key) && place_free(x,y+spd)
 {
     y += spd;
 }

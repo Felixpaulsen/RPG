@@ -50,7 +50,6 @@ sign_text[2] = "Other sign";
           <argument>
             <kind>1</kind>
             <string>///Draw sign
-
 if obj_player.reading_sign == true
 {
     draw_set_color(c_black);

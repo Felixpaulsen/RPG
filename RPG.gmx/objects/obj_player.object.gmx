@@ -39,31 +39,6 @@ sign_text = noone;
         </arguments>
       </action>
     </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Close sign
-speed = 0;
-reading_sign = false;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -155,14 +130,37 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check_pressed(vk_escape)
+            <string>///Handle depth
+depth = y*(-1);
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Close sign
+if keyboard_check_pressed(vk_escape)
 {
     if reading_sign == true &amp;&amp; game_stop == true
     {
-        var dir_a = point_direction(x,y,obj_sign,obj_sign);
-        speed = 8;
-        direction = dir_a + 180;
-        alarm[0] = 4;
+        var i_n = instance_nearest(x,y,obj_sign);
+        x = i_n.x;
+        y = i_n.y + i_n.sprite_height/2 + sprite_height/2;
+        reading_sign = false;
     }
 }
 </string>
@@ -216,10 +214,10 @@ if reading_sign == false
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Player shadow
+            <string>///Draw shadow
 
-
-draw_sprite(spr_shadow, image_index, x, y+25);
+var shadow_size = 1; //1 = normal size
+draw_sprite_ext(spr_shadow, 0, x, y+sprite_height/2-8, shadow_size, shadow_size, 0, c_white, 1);
 draw_self();
 </string>
           </argument>
