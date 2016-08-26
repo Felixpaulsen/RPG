@@ -17,12 +17,8 @@
     <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_rain</sprite>
     <sprite>sprites\spr_box</sprite>
-<<<<<<< HEAD
     <sprite>sprites\spr_punch</sprite>
-=======
-    <sprite>sprites\spr_tree1</sprite>
-    <sprite>sprites\spr_tree2</sprite>
->>>>>>> origin/master
+    <sprite>sprites\spr_trees</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -41,6 +37,7 @@
     <object>objects\obj_rain</object>
     <object>objects\obj_box</object>
     <object>objects\obj_punch</object>
+    <object>objects\obj_tree</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
