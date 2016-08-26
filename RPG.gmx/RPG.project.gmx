@@ -17,6 +17,7 @@
     <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_rain</sprite>
     <sprite>sprites\spr_box</sprite>
+    <sprite>sprites\spr_punch</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -34,6 +35,7 @@
     <object>objects\opj_rain_control</object>
     <object>objects\obj_rain</object>
     <object>objects\obj_box</object>
+    <object>objects\obj_punch</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
