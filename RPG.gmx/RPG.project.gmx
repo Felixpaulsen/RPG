@@ -17,7 +17,12 @@
     <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_rain</sprite>
     <sprite>sprites\spr_box</sprite>
+<<<<<<< HEAD
     <sprite>sprites\spr_punch</sprite>
+=======
+    <sprite>sprites\spr_tree1</sprite>
+    <sprite>sprites\spr_tree2</sprite>
+>>>>>>> origin/master
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
