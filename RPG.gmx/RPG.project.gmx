@@ -11,6 +11,11 @@
       <sprite>sprites\spr_player_up</sprite>
       <sprite>sprites\spr_player_right</sprite>
       <sprite>sprites\spr_player_left</sprite>
+      <sprites name="Experimental">
+        <sprite>sprites\player_down_sword</sprite>
+        <sprite>sprites\player_left_sword</sprite>
+        <sprite>sprites\player_right_sword</sprite>
+      </sprites>
     </sprites>
     <sprite>sprites\spr_rock</sprite>
     <sprite>sprites\spr_sign</sprite>

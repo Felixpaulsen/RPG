@@ -62,7 +62,7 @@ instance_create(x,y,obj_punch);
 
 if game_stop == false
 {
-    scr_movement(vk_left, vk_right, vk_up, vk_down, 8);
+    scr_movement(ord('A'), ord('D'), ord('W'), ord('S'), 8);
     
     if keyboard_check(vk_left) || keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_down)
     {
