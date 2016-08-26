@@ -19,6 +19,7 @@
     <sprite>sprites\spr_box</sprite>
     <sprite>sprites\spr_punch</sprite>
     <sprite>sprites\spr_trees</sprite>
+    <sprite>sprites\spr_coin</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -38,6 +39,7 @@
     <object>objects\obj_box</object>
     <object>objects\obj_punch</object>
     <object>objects\obj_tree</object>
+    <object>objects\obj_coin</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>

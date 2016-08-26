@@ -51,7 +51,7 @@ depth = y*(-1);
             <kind>1</kind>
             <string>///Draw shadow
 var shadow_size = 0.75; //1 = normal size
-draw_sprite_ext(spr_shadow, 0, x, y+sprite_height/2-8, shadow_size, shadow_size, 0, c_white, 1);
+draw_sprite_ext(spr_shadow, 0, x, y+sprite_height/2-4, shadow_size, shadow_size, 0, c_white, 1);
 draw_self();
 </string>
           </argument>
