@@ -33,6 +33,7 @@
     <object>objects\obj_draw_sign_text</object>
     <object>objects\opj_rain_control</object>
     <object>objects\obj_rain</object>
+    <object>objects\obj_box</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_game</room>
