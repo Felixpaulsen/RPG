@@ -8,9 +8,9 @@ down_key = argument3;
 spd = argument4;
 
 //Left movement
-if keyboard_check(left_key) && place_free(x-spd,y)
+if keyboard_check(left_key) && place_free(x-spd,y) //Checks if left key is pressed and if the position is empty
 {
-    x -= spd;
+    x -= spd; //Moves to position
 }
 
 //Right movement
