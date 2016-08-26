@@ -11,22 +11,26 @@ spd = argument4;
 if keyboard_check(left_key) && place_free(x-spd,y) //Checks if left key is pressed and if the position is empty
 {
     x -= spd; //Moves to position
+    sprite_index = spr_player_left;
 }
 
 //Right movement
 if keyboard_check(right_key) && place_free(x+spd,y)
 {
     x += spd;
+    sprite_index = spr_player_right;
 }
 
 //Up movement
 if keyboard_check(up_key) && place_free(x,y-spd)
 {
     y -= spd;
+    sprite_index = spr_player_up;
 }
 
 //Down movement
 if keyboard_check(down_key) && place_free(x,y+spd)
 {
     y += spd;
+    sprite_index = spr_player_down;
 }

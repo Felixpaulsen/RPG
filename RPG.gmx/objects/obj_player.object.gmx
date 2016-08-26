@@ -62,14 +62,6 @@ if game_stop == false
 {
     scr_movement(vk_left, vk_right, vk_up, vk_down, 8);
     
-    switch (keyboard_lastkey)
-    {
-        case vk_left: sprite_index = spr_player_left; break;
-        case vk_right: sprite_index = spr_player_right; break;
-        case vk_up: sprite_index = spr_player_up; break;
-        case vk_down: sprite_index = spr_player_down; break;
-    }
-    
     if keyboard_check(vk_left) || keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_down)
     {
         image_speed = 1/4;
