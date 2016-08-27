@@ -33,20 +33,23 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_sign</font>
+    <font>fonts\fnt_score</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
     <object>objects\obj_rock</object>
     <object>objects\obj_sign</object>
     <object>objects\obj_draw_sign_text</object>
-    <object>objects\opj_rain_control</object>
+    <object>objects\obj_rain_control</object>
     <object>objects\obj_rain</object>
     <object>objects\obj_box</object>
     <object>objects\obj_punch</object>
     <object>objects\obj_tree</object>
     <object>objects\obj_coin</object>
+    <object>objects\obj_draw_score</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_setup</room>
     <room>rooms\rm_game</room>
   </rooms>
   <help>

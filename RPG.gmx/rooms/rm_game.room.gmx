@@ -10,7 +10,9 @@
   <persistent>0</persistent>
   <colour>4227072</colour>
   <showcolour>-1</showcolour>
-  <code>instance_create(x,y,obj_draw_sign_text);</code>
+  <code>instance_create(x,y,obj_draw_sign_text);
+instance_create(x,y,obj_draw_score);
+instance_create(x,y,obj_rain_control);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
@@ -59,7 +61,6 @@
     <instance objName="obj_rock" x="461" y="504" name="inst_A2F0C6C9" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign" x="384" y="416" name="inst_44317809" locked="0" code="number = 1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_sign" x="160" y="160" name="inst_5926AA4F" locked="0" code="number = 2;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="opj_rain_control" x="32" y="32" name="inst_09A896E0" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="672" y="128" name="inst_D95B677B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_box" x="608" y="128" name="inst_3B4C1071" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_tree" x="384" y="800" name="inst_88715729" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>

@@ -73,7 +73,7 @@
             <kind>1</kind>
             <string>if (keyboard_check_pressed(vk_enter) || punching == true) &amp;&amp; x == obj_player.x &amp;&amp; y == obj_player.y+15
 {
-    speed = 4;
+    speed = 3;
     direction = image_angle;
     punching = true;
     alarm[0]=5;
@@ -94,7 +94,9 @@ switch(obj_player.sprite_index)
     case spr_player_down: image_angle = 270; break;
 }   
 
-depth = obj_player.depth +1;
+depth = obj_player.depth+1;
+
+visible = true;
 
 if speed != 0
 {

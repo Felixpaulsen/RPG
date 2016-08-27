@@ -41,6 +41,30 @@ instance_create(x,y,obj_punch);
         </arguments>
       </action>
     </event>
+    <event eventtype="2" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Stop drawing score
+draw_score = false;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="3" enumb="0">
       <action>
         <libid>1</libid>
@@ -64,7 +88,7 @@ if game_stop == false
 {
     scr_movement(ord('A'), ord('D'), ord('W'), ord('S'), 8);
     
-    if keyboard_check(vk_left) || keyboard_check(vk_right) || keyboard_check(vk_up) || keyboard_check(vk_down)
+    if keyboard_check(ord('A')) || keyboard_check(ord('D')) || keyboard_check(ord('W')) || keyboard_check(ord('S'))
     {
         image_speed = 1/4;
     }
@@ -161,6 +185,41 @@ if keyboard_check_pressed(vk_escape)
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if draw_score == false
+{
+    if obj_draw_score.alpha &gt; 0
+    {
+        obj_draw_score.alpha -= 0.1;
+    }
+}
+
+if draw_score == true
+{
+    if obj_draw_score.alpha &lt; 1
+    {
+        obj_draw_score.alpha += 0.05;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="4" ename="obj_coin">
       <action>
@@ -183,6 +242,10 @@ if keyboard_check_pressed(vk_escape)
 {
     instance_destroy();
 }
+
+score ++;
+draw_score = true;
+alarm[0] = 60;
 </string>
           </argument>
         </arguments>
@@ -237,7 +300,7 @@ if reading_sign == false
             <string>///Draw shadow
 
 var shadow_size = 1; //1 = normal size
-draw_sprite_ext(spr_shadow, 0, x, y+sprite_height/2-8, shadow_size, shadow_size, 0, c_white, 1);
+draw_sprite_ext(spr_shadow, 0, x, y+sprite_height/2-4, shadow_size, shadow_size, 0, c_white, 1);
 draw_self();
 </string>
           </argument>
