@@ -33,6 +33,7 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_movement.gml</script>
+    <script>scripts\scr_new_movement.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_sign</font>
@@ -45,7 +46,7 @@
     <object>objects\obj_draw_sign_text</object>
     <object>objects\obj_draw_score</object>
     <object>objects\obj_rain_control</object>
-    <objects name="world">
+    <objects name="World">
       <object>objects\obj_wood</object>
       <object>objects\obj_campfire</object>
       <object>objects\obj_tree</object>

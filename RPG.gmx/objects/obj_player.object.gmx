@@ -36,6 +36,9 @@ game_stop = false;
 sign_text = noone;
 
 instance_create(x,y,obj_punch);
+
+score = 0;
+health = 100;
 </string>
           </argument>
         </arguments>
@@ -86,6 +89,8 @@ draw_score = false;
 
 if game_stop == false
 {
+    if input_method == "mouse"
+        scr_new_movement(8);
     scr_movement(ord('A'), ord('D'), ord('W'), ord('S'), 8);
     
     if keyboard_check(ord('A')) || keyboard_check(ord('D')) || keyboard_check(ord('W')) || keyboard_check(ord('S'))

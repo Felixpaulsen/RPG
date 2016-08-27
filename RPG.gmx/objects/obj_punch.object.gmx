@@ -71,7 +71,16 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (keyboard_check_pressed(vk_enter) || punching == true) &amp;&amp; x == obj_player.x &amp;&amp; y == obj_player.y+15
+            <string>if input_method == "mouse"
+{
+    var aa = mouse_check_button_pressed(mb_right);
+}
+else
+{
+    var aa = keyboard_check_pressed(vk_enter);
+}
+
+if (aa || punching == true) &amp;&amp; x == obj_player.x &amp;&amp; y == obj_player.y+15
 {
     speed = 3;
     direction = image_angle;
