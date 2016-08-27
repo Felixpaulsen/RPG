@@ -137,9 +137,12 @@ else
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with (other)
-{
-    instance_destroy();
+            <string>if visible == true
+{ 
+    with (other)
+    {
+        instance_destroy();
+    }
 }
 </string>
           </argument>

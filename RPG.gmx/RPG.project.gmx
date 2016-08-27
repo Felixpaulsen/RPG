@@ -33,6 +33,7 @@
     <sprite>sprites\spr_water_beach</sprite>
     <sprite>sprites\spr_house</sprite>
     <sprite>sprites\spr_mob</sprite>
+    <sprite>sprites\spr_save</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_credits</background>
@@ -67,6 +68,7 @@
       <object>objects\obj_water</object>
       <object>objects\obj_water_beach</object>
       <object>objects\obj_house</object>
+      <object>objects\obj_save</object>
     </objects>
   </objects>
   <rooms name="rooms">

@@ -36,33 +36,7 @@ game_stop = false;
 sign_text = noone;
 
 instance_create(x,y,obj_punch);
-
-score = 0;
 health = 100;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="2" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Stop drawing score
-draw_score = false;
 </string>
           </argument>
         </arguments>
@@ -190,6 +164,8 @@ if keyboard_check_pressed(vk_escape)
           </argument>
         </arguments>
       </action>
+    </event>
+    <event eventtype="4" ename="obj_save">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -206,21 +182,12 @@ if keyboard_check_pressed(vk_escape)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if draw_score == false
-{
-    if obj_draw_score.alpha &gt; 0
-    {
-        obj_draw_score.alpha -= 0.1;
-    }
-}
-
-if draw_score == true
-{
-    if obj_draw_score.alpha &lt; 1
-    {
-        obj_draw_score.alpha += 0.05;
-    }
-}
+            <string>ini_open("save.ini");
+ini_write_real("stats","score",score);
+ini_close();
+var i_n = instance_nearest(x,y,obj_save);
+x = i_n.x;
+y = i_n.y + i_n.sprite_height/2 + sprite_height/2;
 </string>
           </argument>
         </arguments>
@@ -278,8 +245,6 @@ if reading_sign == false
 }
 
 score ++;
-draw_score = true;
-alarm[0] = 60;
 </string>
           </argument>
         </arguments>
