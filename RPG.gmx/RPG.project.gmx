@@ -31,6 +31,7 @@
     <sprite>sprites\spr_water</sprite>
     <sprite>sprites\spr_water_angle</sprite>
     <sprite>sprites\spr_water_beach</sprite>
+    <sprite>sprites\spr_house</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_credits</background>
@@ -63,6 +64,7 @@
       <object>objects\obj_water_angle</object>
       <object>objects\obj_water</object>
       <object>objects\obj_water_beach</object>
+      <object>objects\obj_house</object>
     </objects>
   </objects>
   <rooms name="rooms">
