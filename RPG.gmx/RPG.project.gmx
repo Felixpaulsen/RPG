@@ -29,7 +29,9 @@
     <sprite>sprites\spr_wood</sprite>
     <sprite>sprites\spr_fence</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_credits</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\scr_movement.gml</script>
