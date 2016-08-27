@@ -32,6 +32,7 @@
     <sprite>sprites\spr_water_angle</sprite>
     <sprite>sprites\spr_water_beach</sprite>
     <sprite>sprites\spr_house</sprite>
+    <sprite>sprites\spr_mob</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_credits</background>
@@ -46,6 +47,7 @@
     <font>fonts\fnt_score</font>
   </fonts>
   <objects name="objects">
+    <object>objects\obj_mob</object>
     <object>objects\obj_player</object>
     <object>objects\obj_punch</object>
     <object>objects\obj_coin</object>
