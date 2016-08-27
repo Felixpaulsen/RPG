@@ -27,6 +27,7 @@
     <sprite>sprites\spr_coin</sprite>
     <sprite>sprites\spr_campfire</sprite>
     <sprite>sprites\spr_wood</sprite>
+    <sprite>sprites\spr_fence</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -52,6 +53,7 @@
       <object>objects\obj_rain</object>
       <object>objects\obj_rock</object>
       <object>objects\obj_sign</object>
+      <object>objects\obj_fence</object>
     </objects>
   </objects>
   <rooms name="rooms">
