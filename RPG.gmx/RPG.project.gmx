@@ -28,6 +28,9 @@
     <sprite>sprites\spr_campfire</sprite>
     <sprite>sprites\spr_wood</sprite>
     <sprite>sprites\spr_fence</sprite>
+    <sprite>sprites\spr_water</sprite>
+    <sprite>sprites\spr_water_angle</sprite>
+    <sprite>sprites\spr_water_beach</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_credits</background>
@@ -57,6 +60,9 @@
       <object>objects\obj_rock</object>
       <object>objects\obj_sign</object>
       <object>objects\obj_fence</object>
+      <object>objects\obj_water_angle</object>
+      <object>objects\obj_water</object>
+      <object>objects\obj_water_beach</object>
     </objects>
   </objects>
   <rooms name="rooms">
