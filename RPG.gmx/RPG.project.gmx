@@ -25,6 +25,8 @@
     <sprite>sprites\spr_punch</sprite>
     <sprite>sprites\spr_trees</sprite>
     <sprite>sprites\spr_coin</sprite>
+    <sprite>sprites\spr_campfire</sprite>
+    <sprite>sprites\spr_wood</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -37,16 +39,20 @@
   </fonts>
   <objects name="objects">
     <object>objects\obj_player</object>
-    <object>objects\obj_rock</object>
-    <object>objects\obj_sign</object>
-    <object>objects\obj_draw_sign_text</object>
-    <object>objects\obj_rain_control</object>
-    <object>objects\obj_rain</object>
-    <object>objects\obj_box</object>
     <object>objects\obj_punch</object>
-    <object>objects\obj_tree</object>
     <object>objects\obj_coin</object>
+    <object>objects\obj_draw_sign_text</object>
     <object>objects\obj_draw_score</object>
+    <object>objects\obj_rain_control</object>
+    <objects name="world">
+      <object>objects\obj_wood</object>
+      <object>objects\obj_campfire</object>
+      <object>objects\obj_tree</object>
+      <object>objects\obj_box</object>
+      <object>objects\obj_rain</object>
+      <object>objects\obj_rock</object>
+      <object>objects\obj_sign</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_setup</room>
