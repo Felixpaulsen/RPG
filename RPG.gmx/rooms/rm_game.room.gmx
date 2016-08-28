@@ -12,7 +12,10 @@
   <showcolour>-1</showcolour>
   <code>instance_create(x,y,obj_draw_sign_text);
 instance_create(x,y,obj_draw_score);
-instance_create(x,y,obj_rain_control);</code>
+instance_create(x,y,obj_rain_control);
+
+//instance_create(x,y,obj_light);
+//instance_create(x,y,obj_layer_light_controller);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>
