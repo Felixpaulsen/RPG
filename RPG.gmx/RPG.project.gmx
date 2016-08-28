@@ -46,6 +46,7 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_sign</font>
+    <font>fonts\fnt_escape_sign</font>
     <font>fonts\fnt_score</font>
     <font>fonts\fnt_presents</font>
     <font>fonts\fnt_title</font>
@@ -79,6 +80,7 @@
     <object>objects\obj_intro</object>
     <object>objects\obj_start</object>
     <object>objects\obj_menu</object>
+    <object>objects\obj_alpha_text</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_intro</room>

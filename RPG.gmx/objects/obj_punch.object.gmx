@@ -80,12 +80,15 @@ else
     var aa = keyboard_check_pressed(vk_enter);
 }
 
-if (aa || punching == true) &amp;&amp; x == obj_player.x &amp;&amp; y == obj_player.y+15
+if (obj_player.sprite_index == spr_player_left) or (obj_player.sprite_index == spr_player_right)
 {
-    speed = 3;
-    direction = image_angle;
-    punching = true;
-    alarm[0]=5;
+    if (aa || punching == true) &amp;&amp; x == obj_player.x &amp;&amp; y == obj_player.y+15
+    {
+        speed = 3;
+        direction = image_angle;
+        punching = true;
+        alarm[0]=5;
+    }
 }
 
 if punching == false

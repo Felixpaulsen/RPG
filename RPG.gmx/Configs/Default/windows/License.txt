@@ -1,3 +1,5 @@
+This game is under copyright by Felix Paulsen and Damiano Pedoni
+
 This Application was made using GameMaker. GameMaker is the intellectual property of YoYo Games Ltd, a company of the United Kingdom.
 
 THIS END USER LICENSE AGREEMENT APPLIES TO ALL USE OF THIS APPLICATION.
