@@ -35,6 +35,7 @@
     <sprite>sprites\spr_mob</sprite>
     <sprite>sprites\spr_save</sprite>
     <sprite>sprites\spr_light</sprite>
+    <sprite>sprites\spr_mob_view</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_credits</background>
@@ -73,6 +74,7 @@
     </objects>
     <object>objects\obj_layer_light_controller</object>
     <object>objects\obj_light</object>
+    <object>objects\obj_mob_view</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_setup</room>
