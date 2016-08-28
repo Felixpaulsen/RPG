@@ -41,6 +41,34 @@ health = 100;
           </argument>
         </arguments>
       </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Load location
+if file_exists("save.ini")
+{
+    ini_open("save.ini");
+    x = ini_read_real("player","position_x",xstart);
+    y = ini_read_real("player","position_y",ystart);
+    ini_close();
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
     </event>
     <event eventtype="3" enumb="0">
       <action>
@@ -165,34 +193,6 @@ if keyboard_check_pressed(vk_escape)
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_save">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>ini_open("save.ini");
-ini_write_real("stats","score",score);
-ini_close();
-var i_n = instance_nearest(x,y,obj_save);
-x = i_n.x;
-y = i_n.y + i_n.sprite_height/2 + sprite_height/2;
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="4" ename="obj_sign">
       <action>
         <libid>1</libid>
@@ -245,6 +245,10 @@ if reading_sign == false
 }
 
 score ++;
+
+ini_open("save.ini");
+ini_write_real("stats","score",score);
+ini_close();
 </string>
           </argument>
         </arguments>

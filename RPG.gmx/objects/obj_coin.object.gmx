@@ -123,7 +123,7 @@ speed = 0;
             <string>if distance_to_object(obj_player) &lt; 70 &amp;&amp; ready == true
 {
     direction = point_direction(x,y,obj_player.x,obj_player.y);
-    speed = 11;
+    speed = 20;
 }
 </string>
           </argument>

@@ -29,7 +29,9 @@ if file_exists("save.ini")
     ini_close();
 }
 else
-    score = 0;</code>
+    score = 0;
+    
+instance_create(x,y,obj_game_end);</code>
   <enableViews>0</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <clearDisplayBuffer>-1</clearDisplayBuffer>

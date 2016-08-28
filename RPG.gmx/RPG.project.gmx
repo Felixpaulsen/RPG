@@ -21,7 +21,7 @@
     <sprite>sprites\spr_sign</sprite>
     <sprite>sprites\spr_shadow</sprite>
     <sprite>sprites\spr_rain</sprite>
-    <sprite>sprites\spr_box</sprite>
+    <sprite>sprites\spr_jar</sprite>
     <sprite>sprites\spr_punch</sprite>
     <sprite>sprites\spr_trees</sprite>
     <sprite>sprites\spr_coin</sprite>
@@ -33,7 +33,6 @@
     <sprite>sprites\spr_water_beach</sprite>
     <sprite>sprites\spr_house</sprite>
     <sprite>sprites\spr_mob</sprite>
-    <sprite>sprites\spr_save</sprite>
     <sprite>sprites\spr_light</sprite>
   </sprites>
   <backgrounds name="background">
@@ -60,7 +59,7 @@
       <object>objects\obj_wood</object>
       <object>objects\obj_campfire</object>
       <object>objects\obj_tree</object>
-      <object>objects\obj_box</object>
+      <object>objects\obj_jar</object>
       <object>objects\obj_rain</object>
       <object>objects\obj_rock</object>
       <object>objects\obj_sign</object>
@@ -69,10 +68,10 @@
       <object>objects\obj_water</object>
       <object>objects\obj_water_beach</object>
       <object>objects\obj_house</object>
-      <object>objects\obj_save</object>
     </objects>
     <object>objects\obj_layer_light_controller</object>
     <object>objects\obj_light</object>
+    <object>objects\obj_game_end</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_setup</room>
