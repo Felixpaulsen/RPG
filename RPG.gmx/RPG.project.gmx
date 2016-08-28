@@ -47,6 +47,9 @@
   <fonts name="fonts">
     <font>fonts\fnt_sign</font>
     <font>fonts\fnt_score</font>
+    <font>fonts\fnt_presents</font>
+    <font>fonts\fnt_title</font>
+    <font>fonts\fnt_start</font>
   </fonts>
   <objects name="objects">
     <object>objects\obj_mob</object>
@@ -73,9 +76,14 @@
     <object>objects\obj_layer_light_controller</object>
     <object>objects\obj_light</object>
     <object>objects\obj_game_end</object>
+    <object>objects\obj_intro</object>
+    <object>objects\obj_start</object>
+    <object>objects\obj_menu</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_intro</room>
     <room>rooms\rm_setup</room>
+    <room>rooms\rm_menu</room>
     <room>rooms\rm_game</room>
   </rooms>
   <help>

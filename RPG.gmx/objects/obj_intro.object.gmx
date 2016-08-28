@@ -25,7 +25,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 30;
+            <string>background_index[0] = bg_credits;
+alarm[0] = room_speed*3;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>room_goto_next();
 </string>
           </argument>
         </arguments>
@@ -48,18 +72,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>///Save player position
-ini_open("save.ini");
-ini_write_real("player","position_x",obj_player.x);
-ini_write_real("player","position_y",obj_player.y);
-ini_close();
-alarm[0] = room_speed;
+            <string>background_index[0] = bg_menu;
+alarm[1] = room_speed*3;
 </string>
           </argument>
         </arguments>
       </action>
     </event>
-    <event eventtype="3" enumb="0">
+    <event eventtype="8" enumb="0">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -76,56 +96,23 @@ alarm[0] = room_speed;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if keyboard_check(vk_subtract)
+            <string>if background_index[0] == bg_credits
 {
-    health -= 1;
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_font(fnt_presents);
+    draw_text(room_width/2,room_height/2+(room_height/3),"Presents");
 }
-else
-if keyboard_check(vk_add)
-{
-    health += 1;
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>///Draw score
-draw_set_alpha(1);
-draw_set_font(fnt_score);
-var color_2 = make_color_rgb(50,255,61);
-draw_set_color(color_2);
-draw_sprite_ext(spr_coin,0,32,32,2,2,0,c_white,1);
-draw_set_halign(fa_left);
-draw_set_valign(fa_middle);
-draw_text(32*2-8,32,score);
 
-draw_set_color(c_black);
-draw_set_halign(fa_left);
-draw_set_valign(fa_bottom);
-draw_set_font(fnt_score);
-draw_text(32,view_hview[0]-32*2,"Bob");
-draw_set_color(c_red);
-draw_rectangle(32,view_hview[0]-32-16,32+health,view_hview[0]-32,false);
-draw_set_color(c_black);
-draw_rectangle(32,view_hview[0]-32-16,32+100,view_hview[0]-32,true);
+if background_index[0] == bg_menu
+{
+    draw_set_color(c_white);
+    draw_set_halign(fa_center);
+    draw_set_valign(fa_middle);
+    draw_set_font(fnt_presents);
+    draw_text(room_width/2,room_height/2+(room_height/3),"In association with");
+}
 </string>
           </argument>
         </arguments>
