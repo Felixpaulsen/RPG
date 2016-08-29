@@ -34,6 +34,8 @@
     <sprite>sprites\spr_house</sprite>
     <sprite>sprites\spr_mob</sprite>
     <sprite>sprites\spr_light</sprite>
+    <sprite>sprites\spr_test</sprite>
+    <sprite>sprites\spr_test_attack</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_credits</background>
@@ -81,6 +83,8 @@
     <object>objects\obj_start</object>
     <object>objects\obj_menu</object>
     <object>objects\obj_alpha_text</object>
+    <object>objects\obj_test</object>
+    <object>objects\obj_test_attack</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\rm_intro</room>
